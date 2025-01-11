@@ -1,4 +1,4 @@
-import s from "./SearchBox.module.css";
+import s from "./Searchbox.module.css";
 const Searchbox = ({ searchParam, handleSearch }) => {
   return (
     <label className={s.searchLabel}>
