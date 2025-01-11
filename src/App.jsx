@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import ContactForm from "./components/ContactForm/ContactForm";
-import Searchbox from "./components/Searchbox/Searchbox";
 import ContactList from "./components/ContactList/ContactList";
 import { nanoid } from "nanoid";
+import SearchBox from "./components/SearchBox/SearchBox";
 
 const App = () => {
   const [contacts, setContacts] = useState(() => {
@@ -47,7 +47,7 @@ const App = () => {
     <div>
       <h1>Phonebook</h1>
       <ContactForm onAddContact={onAddContact} />
-      <Searchbox searchParam={searchParam} handleSearch={handleSearch} />
+      <SearchBox searchParam={searchParam} handleSearch={handleSearch} />
       <ContactList
         contacts={foundContacts}
         onDeleteContact={onDeleteContact}

@@ -1,5 +1,6 @@
 import s from "./Searchbox.module.css";
-const Searchbox = ({ searchParam, handleSearch }) => {
+
+const SearchBox = ({ searchParam, handleSearch }) => {
   return (
     <label className={s.searchLabel}>
       <span>Find contacts by name </span>
@@ -13,4 +14,4 @@ const Searchbox = ({ searchParam, handleSearch }) => {
   );
 };
 
-export default Searchbox;
+export default SearchBox;
