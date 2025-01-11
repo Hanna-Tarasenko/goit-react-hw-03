@@ -1,4 +1,4 @@
-import s from "./Searchbox.module.css";
+import s from "./SearchBox.module.css";
 
 const SearchBox = ({ searchParam, handleSearch }) => {
   return (
